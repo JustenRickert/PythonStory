@@ -1,0 +1,214 @@
+@@ -0,0 +1,213 @@
+ADJECTIVES
+    American
+    battered
+    darling
+    Korean
+    fully_charged
+    heavily_fortified
+    Human
+    intense
+    Night_Elf
+    Terran
+    stout
+    Zerg
+    Protoss
+    Undead
+ADVERBS
+    acrobatically  
+    bleakly         
+    courageously
+    doubtfully
+    intensely
+    intently
+    magically
+    meticulously
+    slowly
+    stunningly
+    treacherously      
+    triumphantly
+    zestfully
+NOUNS
+    SINGULAR                    PLURAL 
+    aristocrat                  aristocrats
+    assassin                    assassins
+    bat                         bats
+    coastal_city                coastal_cities
+    chicken                     chickens
+    cat                         cats
+    druid                       druids
+    dog                         dogs
+    enforcer                    enforcers
+    grunt                       grunts
+    heavy_pulse_rifle           heavy_pulse_rifles
+    helix_rocket                helix_rockets
+    hot_babe                    hot_babes
+    hyena                       hyena
+    jerkoff                     jerkoffs
+    giraffe                     giraffes
+    lord_of_destruction         lords_of_destruction
+    marine                      marines
+    man                         men
+    mercenary                   mercenaries
+    mouse                       mice
+    octopus                     octopuses
+    queen_of_blades             queens_of_blades
+    skunk                       skunk
+    stretch_of_land             stretches_of_land
+    tiger                       tigers
+    vigilante                   vigilantes
+    venom_mine                  venom_mines
+    worgen                      worgens
+    wolf                        wolves
+    woman                       women
+    zebra                       zebra
+    zombie                      zombies
+VERBS
+    SINGULAR
+        FIRST I
+            PAST                PRESENT            FUTURE
+            attacked            attack             will_attack
+            collected           collect            will_collect
+            computed            compute            will_compute
+            cutified            cutify             will_cutify 
+            killed              kill               will_kill
+            loved               love               will_love
+            questioned          question           will_question
+            scrapped            scrap              will_scrap
+            shielded            shield             will_shield
+            rated               rate               will_rate
+            wore                wear               will_wear
+            acted_like          act_like           will_act_like
+            acclimated_to       acclimate_to       will_acclimate_to
+            took_a_breather     take_a_breather    will_take_a_breather 
+            stepped_on          step_on            will_step_on
+        SECOND  YOU
+            PAST                PRESENT            FUTURE
+            attacked            attack             will_attack
+            computed            compute            will_collect
+            collected           collect            will_compute
+            cutified            cutify             will_cutify 
+            questioned          question           will_kill
+            rated               rate               will_love
+            scrapped            scrap              will_scrap
+            shielded            shield             will_shield
+            killed              kill               will_question
+            loved               love               will_rate
+            wore                wear               will_wear
+            acted_like          act_like           will_act_like
+            acclimated_to       acclimate_to       will_acclimate_to
+            took_a_breather     take_a_breather    will_take_a_breather
+            stepped_on          step_on            will_step_on
+        THIRD   HE
+            PAST                PRESENT            FUTURE
+            attacked            attacks            will_attack
+            computed            computes           will_collect
+            collected           collects           will_compute
+            cutified            cutifies           will_cutify 
+            questioned          questions          will_kill
+            killed              kills              will_love
+            loved               loves              will_question
+            rated               rates              will_rate
+            scrapped            scraps             will_scrap
+            shielded            shields            will_shield
+            wore                wears              will_wear
+            acted_like          acts_like          will_act_like
+            acclimated_to       acclimates_to      will_acclimate_to
+            took_a_breather     takes_a_breather   will_take_a_breather
+            stepped_on          steps_on           will_step_on
+    PLURAL
+        FIRST   WE
+            PAST                PRESENT            FUTURE
+            attacked            attack             will_attack
+            collected           collect            will_collect
+            computed            compute            will_compute
+            cutified            cutify             will_cutify 
+            killed              kill               will_kill
+            loved               love               will_love
+            questioned          question           will_question
+            rated               rate               will_rate
+            scrapped            scrap              will_scrap
+            shielded            shield             will_shield
+            wore                wear               will_wear
+            acted_like          act_like           will_act_like
+            acclimated_to       acclimate_to       will_acclimate_to
+            took_a_breather     take_a_breather    will_take_a_breather
+            stepped_on          step_on            will_step_on
+        SECOND  YOU
+            PAST                PRESENT            FUTURE
+            attacked            attack             will_attack
+            collected           collect            will_collect
+            computed            compute            will_compute
+            cutified            cutify             will_cutify 
+            killed              kill               will_kill
+            loved               love               will_love
+            questioned          question           will_question
+            rated               rate               will_rate
+            scrapped            scrap              will_scrap
+            shielded            shield             will_shield
+            wore                wear               will_wear
+            acted_like          act_like           will_act_like
+            acclimated_to       acclimate_to       will_acclimate_to
+            took_a_breather     take_a_breather    will_take_a_breather
+            stepped_on          step_on            will_step_on
+        THIRD   THEY
+            PAST                PRESENT            FUTURE
+            attacked            attack             will_attack
+            collected           collect            will_collect
+            computed            compute            will_compute
+            cutified            cutify             will_cutify 
+            killed              kill               will_kill
+            loved               love               will_love
+            questioned          question           will_question
+            scrapped            scrap              will_scrap
+            shielded            shield             will_shield
+            rated               rate               will_rate
+            wore                wear               will_wear
+            acted_like          act_like           will_act_like
+            acclimated_to       acclimate_to       will_acclimate_to
+            took_a_breather     take_a_breather    will_take_a_breather
+            stepped_on          step_on            will_step_on
+NAMES
+    SPECIAL
+        Roadhog
+        Junkrat
+        Lucio
+        Soldier:76
+        Zarya
+        McCree
+        Tracer
+        Reaper
+        Widowmaker
+        Winston
+        Pharah
+        Reinhardt
+        Symmetra
+        Torbjorn
+        Bastion
+        Hanzo
+        Mercy
+        Zenyatta
+    OTHER
+        Abraham
+        Ella
+        Diablo
+        Justen
+        Kyle
+        Sarah_Kerrigan
+        Jim_Raynor
+        Tia
+        Ya_Boy_Easy_Mac_Miller
+        Zel'Thuzad
+        Zeratul
+ARTICLES
+    a
+    the
+    all
+    many
+    most
+    some
+    a_calculated_majority_of
+    a_couple_of
+    a_few
+    the_majority_of
+END
