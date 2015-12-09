@@ -1,8 +1,6 @@
 import random
 from wordShelf import WordShelf
 
-fileName = 'wordListBlizz'
-
 ''' Specific verbs are callable as object member variables
     eg: Verb( 'singular', 'first', 'past' ) returns members like
 
@@ -24,7 +22,7 @@ class Verb( WordShelf ):
     ''' If no args found for each any arg, a random assignment is
             called for each.                                        '''
     def __init__( self, *args ):
-        super( Verb, self ).__init__( fileName )
+        super( Verb, self ).__init__()
 
         #   The word
         self.value = ''
@@ -58,6 +56,10 @@ class Verb( WordShelf ):
                 self.verbs[ self.kind['plurality'] ]
                           [ self.kind['person'] ]
                           [ self.kind['tense'] ]     )
+
+
+            raise RuntimeError("no adjectives left")
+
         return verb
 
     ''' member functions '''
@@ -68,6 +70,10 @@ class Verb( WordShelf ):
         self.verbs[ self.kind['plurality'] ]\
                   [ self.kind['person'] ]\
                   [ self.kind['tense'] ].remove(self.value)
+
+        if not len(self.verbs[ self.kind['plurality'] ]
+                             [ self.kind['person'] ]
+                             [ self.kind['tense'] ]):
 
         #   re-run init to recreate verb
         self.__init__(
@@ -142,4 +148,6 @@ class Verb( WordShelf ):
         return tense
 
 verb = Verb()
-print( verb.nextRandom );
+
+for i in range( 0, 1000 ):
+    print( verb.nextRandom() )

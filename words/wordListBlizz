@@ -1,23 +1,32 @@
-@@ -0,0 +1,213 @@
 ADJECTIVES
     American
     battered
     darling
+    extraterrestrial
     Korean
+    French
     fully_charged
+    freaky
     heavily_fortified
+    hateful
     Human
     intense
     Night_Elf
     Terran
+    silly
     stout
-    Zerg
+    tall
     Protoss
+    pretty
+    protective
     Undead
+    ugly
+    Zerg
 ADVERBS
     acrobatically  
     bleakly         
     courageously
+    corruptly
     doubtfully
     intensely
     intently
@@ -33,32 +42,51 @@ NOUNS
     aristocrat                  aristocrats
     assassin                    assassins
     bat                         bats
+    bar                         bars
+    barbarian                   barbarians
     coastal_city                coastal_cities
     chicken                     chickens
     cat                         cats
+    car                         cars
+    cartoon_character           cartoon_characters
     druid                       druids
+    dagger                      daggers 
     dog                         dogs
     enforcer                    enforcers
+    frat_dude                   frat_dudes
     grunt                       grunts
+    guitar                      guitars
     heavy_pulse_rifle           heavy_pulse_rifles
     helix_rocket                helix_rockets
     hot_babe                    hot_babes
     hyena                       hyena
-    jerkoff                     jerkoffs
+    item                        items
+    kid                         kids
+    jerk_off                    jerk_offs
     giraffe                     giraffes
     lord_of_destruction         lords_of_destruction
+    librarian                   librarian
+    maggot                      maggots
     marine                      marines
     man                         men
     mercenary                   mercenaries
+    monkey                      monkeys
     mouse                       mice
+    nano_bot                    nano_bots
+    neo_Nazi                    neo_Nazis
     octopus                     octopuses
-    queen_of_blades             queens_of_blades
+    queen                       queens
+    Queen_of_Blades             Queens_of_blades
+    rocket_ship                 rocket_ships
     skunk                       skunk
     stretch_of_land             stretches_of_land
+    suit_of_armor               suits_of_armor
     tiger                       tigers
+    trinket                     trinkets
     vigilante                   vigilantes
     venom_mine                  venom_mines
-    worgen                      worgens
+    witch                       witches
+    Worgen                      Worgens
     wolf                        wolves
     woman                       women
     zebra                       zebra
@@ -77,6 +105,8 @@ VERBS
             scrapped            scrap              will_scrap
             shielded            shield             will_shield
             rated               rate               will_rate
+            tricked             trick              will_trick
+            woke                wake               will_wake
             wore                wear               will_wear
             acted_like          act_like           will_act_like
             acclimated_to       acclimate_to       will_acclimate_to
@@ -94,6 +124,8 @@ VERBS
             shielded            shield             will_shield
             killed              kill               will_question
             loved               love               will_rate
+            tricked             trick              will_trick
+            woke                wake               will_wake
             wore                wear               will_wear
             acted_like          act_like           will_act_like
             acclimated_to       acclimate_to       will_acclimate_to
@@ -111,6 +143,8 @@ VERBS
             rated               rates              will_rate
             scrapped            scraps             will_scrap
             shielded            shields            will_shield
+            tricked             tricks             will_trick
+            woke                wakes              will_wake
             wore                wears              will_wear
             acted_like          acts_like          will_act_like
             acclimated_to       acclimates_to      will_acclimate_to
@@ -129,6 +163,7 @@ VERBS
             rated               rate               will_rate
             scrapped            scrap              will_scrap
             shielded            shield             will_shield
+            woke                wake               will_wake
             wore                wear               will_wear
             acted_like          act_like           will_act_like
             acclimated_to       acclimate_to       will_acclimate_to
@@ -146,6 +181,8 @@ VERBS
             rated               rate               will_rate
             scrapped            scrap              will_scrap
             shielded            shield             will_shield
+            tricked             trick              will_trick
+            woke                wake               will_wake
             wore                wear               will_wear
             acted_like          act_like           will_act_like
             acclimated_to       acclimate_to       will_acclimate_to
@@ -163,6 +200,8 @@ VERBS
             scrapped            scrap              will_scrap
             shielded            shield             will_shield
             rated               rate               will_rate
+            tricked             trick              will_trick
+            woke                wake               will_wake
             wore                wear               will_wear
             acted_like          act_like           will_act_like
             acclimated_to       acclimate_to       will_acclimate_to
@@ -190,13 +229,30 @@ NAMES
         Zenyatta
     OTHER
         Abraham
-        Ella
+        Arteezy
+        Brenna
+        Carly
         Diablo
+        Diane
+        Ella
+        Frieda
+        Gerome
+        Jangles_the_Moon_Monkey
         Justen
         Kyle
+        Illidan_Stormrage
+        Monica
+        Milo
+        Nicole
+        Oprah
+        Orion
+        Penny
+        Ryan
         Sarah_Kerrigan
+        Jacky_Mao
         Jim_Raynor
         Tia
+        Utyshuh
         Ya_Boy_Easy_Mac_Miller
         Zel'Thuzad
         Zeratul

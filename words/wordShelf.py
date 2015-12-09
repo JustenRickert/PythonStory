@@ -19,22 +19,19 @@ class WordShelf(object):
     #       [first, second, third]
     #       [past, present, future]
 
-    #   add plurality
-    verbs =             {
+    verbs =             {   #   plurality
         'singular': {},
         'plural':   {}  }
 
-    #   add person to each plurality
-    for plurality in verbs:
+    for plurality in verbs: #   person
 
         verbs[plurality] =  {
             'first':  {},
             'second': {},
             'third':  {}    }
 
-    #   add tense to each person
     for plurality in verbs:
-        for person in verbs[plurality]:
+        for person in verbs[plurality]: #   tense
 
             verbs[plurality][person] =  {
                 'past':    [],
@@ -42,7 +39,7 @@ class WordShelf(object):
                 'future':  []           }
 
     #   argument should be the name of the file
-    def __init__( self, fileName ):
+    def __init__( self ):
 
         self.wordList = [line for line in open(fileName)]
 
@@ -51,10 +48,13 @@ class WordShelf(object):
             self.articles = self.getArticles()
         if not self.adjectives:
             self.adjectives = self.getAdjectives()
-        # self.addAdverbs()
-        # self.addNouns()
-        # self.addNames()
-        if not self.verbs['singular']['first']['past']:
+        if not self.adverbs:
+            self.addAdverbs()
+        if not self.nouns['singular']:    #   if singular is not set,
+            self.addNouns()               #       then plural wont be either
+        if not self.names['other']:
+            self.addNames()
+        if not self.verbs['singular']['first']['past']: #   same logic^
             self.verbs = self.getVerbs()
 
     def getArticles( self ):
@@ -120,25 +120,28 @@ class WordShelf(object):
 
     def addNames( self ):
 
-        #   tuple to point where start and end of articles is at
-        #   this'll be done twice for 'other' and 'special'
-        start, end =                              (
-                self.wordList.index('NAMES\n'),
-                self.wordList.index('    OTHER\n')    )
+        names = {}
 
-        #   assignment
-        for words in self.wordList[ start+1: end ]:
-            self.names['special'].append( words.strip().replace('_',' ') )
+        #   shortened height of wordList
+        wordList = self.wordList[
+                self.wordList.index('NAMES\n'):
+                self.wordList.index('    OTHER\n') ]
 
-        #   tuple to point where start and end of articles is at
-        #   second time for 'other'
-        start, end =                               (
-                self.wordList.index('    OTHER\n'),
-                self.wordList.index('ARTICLES\n')  )
+        #   special names
+        names['special'] = [ name.strip().replace( '_', ' ' )
+                for name in filter( lambda( word ): not word.isupper(), wordList ) ]
 
-        #   assignment
-        for words in self.wordList[ start+1: end ]:
-            self.names['other'].append( words.strip().replace('_',' ') )
+        #   re-shortened for other names
+        wordList = self.wordList[
+                self.wordList.index('    OTHER\n'):
+                self.wordList.index('ARTICLES\n')  ]
+
+        names['other'] = [ name.strip().replace( '_', ' ' )
+                for name in filter( lambda( word ): not word.isupper(), wordList ) ]
+
+        print names
+
+        self.names = names
 
     def getVerbs( self ):
 
@@ -235,4 +238,5 @@ class WordShelf(object):
 
         return verbs
 
-wordShelf = WordShelf( fileName )
+wordShelf = WordShelf()
+print WordShelf.names
