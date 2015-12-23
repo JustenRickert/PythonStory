@@ -8,21 +8,24 @@ from wordShelf import WordShelf
 
     if no args are given, then random members will be assigned. '''
 
+
 arguments = {
         'plurality': ['singular', 'plural'],
         'person':    ['first', 'second', 'third'],
-        'tense':     ['past', 'present', 'future']  }
+        'tense':     ['past', 'present', 'future']}
 
-class Verb( WordShelf ):
 
-    def __str__( self ):
+class Verb(WordShelf):
+
+    def __str__(self):
         return self.value
 
     ''' Expected arguments are: Verb( * Plurality, Person, Tense )  '''
     ''' If no args found for each any arg, a random assignment is
             called for each.                                        '''
-    def __init__( self, *args ):
-        super( Verb, self ).__init__()
+
+    def __init__(self, *args):
+        super(Verb, self).__init__()
 
         #   The word
         self.value = ''
@@ -31,13 +34,13 @@ class Verb( WordShelf ):
         self.kind = {
                 'plurality': '',
                 'person':    '',
-                'tense':     ''     }
+                'tense':     ''}
 
         #   calls dispatch for each arg
         for arg in args:
             for possible in arguments:
                 if arg in arguments[possible]:
-                    self.kind[possible] = self.dispatch( arg )
+                    self.kind[possible] = self.dispatch(arg)
 
         #   create random for plurity, person, tense if not given as arg
         for key in self.kind:
@@ -51,40 +54,40 @@ class Verb( WordShelf ):
 
         self.value = self.random()
 
-    def random( self ):
+    def random(self):
         verb = random.choice(
-                self.verbs[ self.kind['plurality'] ]
-                          [ self.kind['person'] ]
-                          [ self.kind['tense'] ]     )
-
-
-            raise RuntimeError("no adjectives left")
+                self.verbs[self.kind['plurality']]
+                          [self.kind['person']]
+                          [self.kind['tense']])
 
         return verb
 
     ''' member functions '''
-    def nextRandom( self ):
+
+    def nextRandom(self):
 
         #   delete current verb so it can't be got again
         #   verbs[][][].remove( self.value )
         self.verbs[ self.kind['plurality'] ]\
                   [ self.kind['person'] ]\
-                  [ self.kind['tense'] ].remove(self.value)
+                  [self.kind['tense']].remove(self.value)
 
-        if not len(self.verbs[ self.kind['plurality'] ]
-                             [ self.kind['person'] ]
-                             [ self.kind['tense'] ]):
+        if not len(self.verbs[self.kind['plurality']]
+                             [self.kind['person']]
+                             [self.kind['tense']]):
+            raise RuntimeError("no verbs left")
 
         #   re-run init to recreate verb
         self.__init__(
                self.kind['plurality'],
                self.kind['person'],
-               self.kind['tense']      )
+               self.kind['tense'])
 
         return self
 
     ''' HELPER FUNCTIONS '''
-    def dispatch( self, arg ):
+
+    def dispatch(self, arg):
 
         #   if I want the argument called, then I call it by a dictionary
         #   dispatch [ 'singular', 'first', 'future' ] calls
@@ -103,7 +106,7 @@ class Verb( WordShelf ):
         }[arg]
 
     #   methods
-    def getPlurality( self, *plurality ):
+    def getPlurality(self, *plurality):
 
         #   if given an argument, then match with plurality
         if plurality:
@@ -113,13 +116,12 @@ class Verb( WordShelf ):
         else:
             plurality = [
                     'singular',
-                    'plural',   ]
-            plurality = random.choice( plurality )
+                    'plural', ]
+            plurality = random.choice(plurality)
 
         return plurality
 
-
-    def getPerson( self, *person ):
+    def getPerson(self, *person):
 
         if person:
             person = person[0]
@@ -128,26 +130,22 @@ class Verb( WordShelf ):
             person = [
                     'first',
                     'second',
-                    'third',    ]
-            person = random.choice( person )
+                    'third', ]
+            person = random.choice(person)
 
         return person
 
-    def getTense( self, *tense ):
+    def getTense(self, *tense):
 
         if tense:
             tense = tense[0]
 
         else:
-            tense = [
-                    'past',
-                    'present',
-                    'future'    ]
-            tense = random.choice( tense )
+            tense = random.choice([
+                'past',
+                'present',
+                'future'])
 
         return tense
 
 verb = Verb()
-
-for i in range( 0, 1000 ):
-    print( verb.nextRandom() )

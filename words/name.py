@@ -52,5 +52,3 @@ class Name( WordShelf ):
 
 
 name = Name('special')
-print name
-print name.nextRandom()
