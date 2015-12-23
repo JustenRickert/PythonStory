@@ -1,6 +1,9 @@
 # PythonStory
 
-2015_8_07:
+2015_12_22
+added sentences
+
+2015_12_07:
 moved files around to accomodate coming things.
 
 2015_12_07:
